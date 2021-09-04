@@ -7,19 +7,16 @@
 //
 // Solution by Tim Shultz, September 2021
 //
-// Given the problem statement, we will start our search at 2520 and increase.
-// We will increase by 20, since a candidate number must be divisible by
-// 20 anyway, and this will optimize the search somewhat.
+// Given the problem statement, we will start our search at 2520 and 
+// increase by 20, since a candidate number must be divisible by
+// 20 anyway, and this will optimize the search.
 // 
 // Since all numbers are divisible by 1, we will skip that as well.
-// Knowing that the search starts at 2520 and increments by 20,
-// we will also skip 2 for testing even divisors. We can also skip the test
-// for 20, since our increment of candidate numbers only chooses numbers
+// Will skip 2 for testing even divisors and the test
+// for 20, since our increment of candidate numbers chooses numbers
 // divisible by 20.
 //
-// Algorith will iterative test 2520 + n*20 against {3..19}.
-// Naive implementation would be to just start counting up by 1 and
-// testing 2521, 2522, ... against a loop checking 
+// Algorith will iteratively test 2520 + n*20 against {3..19}.
 //
 // Note that additional optimizations are possible, since for example,
 // numbers divisible 3 don't need to be tested if they are also divisible by 6.
