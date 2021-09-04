@@ -38,6 +38,10 @@
 // Note: Internally, numbers is represented as a string of characters, and
 // converted to an int by subtracting 0x30 hex for ASCII conversion
 // to a number.
+//
+// Using a circular buffer could be more efficient, but complicates
+// the algorithm for handling zeroes.
+// This algorithm is O(n).
 
 #include <iostream>
 #include <string>
